@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: telegram-coder-bot
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: 8110119856:AAEKyEiIlpHP2e-xOQym0YHkGEBLRgyG_wA
+      - key: GEMINI_API_KEY
+        value: AIzaSyCbKhGJ8HJLDa_mZ8VZoau8mH1Yz2-KPmYservices:
+  - type: web
+    name: telegram-coder-bot
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: 8110119856:AAEKyEiIlpHP2e-xOQym0YHkGEBLRgyG_wA
+      - key: GEMINI_API_KEY
+        value: AIzaSyCbKhGJ8HJLDa_mZ8VZoau8mH1Yz2-KPmY
