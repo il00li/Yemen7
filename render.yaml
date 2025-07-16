@@ -3,7 +3,7 @@ services:
     name: telegram-coder-bot
     runtime: python
     region: frankfurt
-    buildCommand: "pip install -r requirements.txt"
+    buildCommand: "pip install python-telegram-bot==20.0 requests"
     startCommand: "python bot.py"
     envVars:
       - key: TELEGRAM_TOKEN
